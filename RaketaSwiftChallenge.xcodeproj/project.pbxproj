@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FB25C151C200AD3134 /* AppDelegate.swift */; };
+		F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */; };
+		F7DF130025C151C200AD3134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FF25C151C200AD3134 /* ViewController.swift */; };
+		F7DF130325C151C200AD3134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130125C151C200AD3134 /* Main.storyboard */; };
+		F7DF130525C151C500AD3134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130425C151C500AD3134 /* Assets.xcassets */; };
+		F7DF130825C151C500AD3134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */; };
+		F7DF131325C151C500AD3134 /* RaketaSwiftChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF131225C151C500AD3134 /* RaketaSwiftChallengeTests.swift */; };
+		F7DF131E25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF131D25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7DF130F25C151C500AD3134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DF12F025C151C200AD3134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DF12F725C151C200AD3134;
+			remoteInfo = RaketaSwiftChallenge;
+		};
+		F7DF131A25C151C500AD3134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DF12F025C151C200AD3134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DF12F725C151C200AD3134;
+			remoteInfo = RaketaSwiftChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaketaSwiftChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DF12FB25C151C200AD3134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7DF12FF25C151C200AD3134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7DF130225C151C200AD3134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7DF130425C151C500AD3134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7DF130725C151C500AD3134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7DF130925C151C500AD3134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DF130E25C151C500AD3134 /* RaketaSwiftChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaketaSwiftChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DF131225C151C500AD3134 /* RaketaSwiftChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaketaSwiftChallengeTests.swift; sourceTree = "<group>"; };
+		F7DF131425C151C500AD3134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DF131925C151C500AD3134 /* RaketaSwiftChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaketaSwiftChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DF131D25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaketaSwiftChallengeUITests.swift; sourceTree = "<group>"; };
+		F7DF131F25C151C500AD3134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7DF12F525C151C200AD3134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DF130B25C151C500AD3134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DF131625C151C500AD3134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7DF12EF25C151C200AD3134 = {
+			isa = PBXGroup;
+			children = (
+				F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */,
+				F7DF131125C151C500AD3134 /* RaketaSwiftChallengeTests */,
+				F7DF131C25C151C500AD3134 /* RaketaSwiftChallengeUITests */,
+				F7DF12F925C151C200AD3134 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7DF12F925C151C200AD3134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */,
+				F7DF130E25C151C500AD3134 /* RaketaSwiftChallengeTests.xctest */,
+				F7DF131925C151C500AD3134 /* RaketaSwiftChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF12FB25C151C200AD3134 /* AppDelegate.swift */,
+				F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */,
+				F7DF12FF25C151C200AD3134 /* ViewController.swift */,
+				F7DF130125C151C200AD3134 /* Main.storyboard */,
+				F7DF130425C151C500AD3134 /* Assets.xcassets */,
+				F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */,
+				F7DF130925C151C500AD3134 /* Info.plist */,
+			);
+			path = RaketaSwiftChallenge;
+			sourceTree = "<group>";
+		};
+		F7DF131125C151C500AD3134 /* RaketaSwiftChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF131225C151C500AD3134 /* RaketaSwiftChallengeTests.swift */,
+				F7DF131425C151C500AD3134 /* Info.plist */,
+			);
+			path = RaketaSwiftChallengeTests;
+			sourceTree = "<group>";
+		};
+		F7DF131C25C151C500AD3134 /* RaketaSwiftChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF131D25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift */,
+				F7DF131F25C151C500AD3134 /* Info.plist */,
+			);
+			path = RaketaSwiftChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7DF12F725C151C200AD3134 /* RaketaSwiftChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DF132225C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallenge" */;
+			buildPhases = (
+				F7DF12F425C151C200AD3134 /* Sources */,
+				F7DF12F525C151C200AD3134 /* Frameworks */,
+				F7DF12F625C151C200AD3134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaketaSwiftChallenge;
+			productName = RaketaSwiftChallenge;
+			productReference = F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7DF130D25C151C500AD3134 /* RaketaSwiftChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DF132525C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallengeTests" */;
+			buildPhases = (
+				F7DF130A25C151C500AD3134 /* Sources */,
+				F7DF130B25C151C500AD3134 /* Frameworks */,
+				F7DF130C25C151C500AD3134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7DF131025C151C500AD3134 /* PBXTargetDependency */,
+			);
+			name = RaketaSwiftChallengeTests;
+			productName = RaketaSwiftChallengeTests;
+			productReference = F7DF130E25C151C500AD3134 /* RaketaSwiftChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7DF131825C151C500AD3134 /* RaketaSwiftChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DF132825C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallengeUITests" */;
+			buildPhases = (
+				F7DF131525C151C500AD3134 /* Sources */,
+				F7DF131625C151C500AD3134 /* Frameworks */,
+				F7DF131725C151C500AD3134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7DF131B25C151C500AD3134 /* PBXTargetDependency */,
+			);
+			name = RaketaSwiftChallengeUITests;
+			productName = RaketaSwiftChallengeUITests;
+			productReference = F7DF131925C151C500AD3134 /* RaketaSwiftChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7DF12F025C151C200AD3134 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					F7DF12F725C151C200AD3134 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					F7DF130D25C151C500AD3134 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F7DF12F725C151C200AD3134;
+					};
+					F7DF131825C151C500AD3134 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F7DF12F725C151C200AD3134;
+					};
+				};
+			};
+			buildConfigurationList = F7DF12F325C151C200AD3134 /* Build configuration list for PBXProject "RaketaSwiftChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7DF12EF25C151C200AD3134;
+			productRefGroup = F7DF12F925C151C200AD3134 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7DF12F725C151C200AD3134 /* RaketaSwiftChallenge */,
+				F7DF130D25C151C500AD3134 /* RaketaSwiftChallengeTests */,
+				F7DF131825C151C500AD3134 /* RaketaSwiftChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7DF12F625C151C200AD3134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DF130825C151C500AD3134 /* LaunchScreen.storyboard in Resources */,
+				F7DF130525C151C500AD3134 /* Assets.xcassets in Resources */,
+				F7DF130325C151C200AD3134 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DF130C25C151C500AD3134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DF131725C151C500AD3134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7DF12F425C151C200AD3134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DF130025C151C200AD3134 /* ViewController.swift in Sources */,
+				F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */,
+				F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DF130A25C151C500AD3134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DF131325C151C500AD3134 /* RaketaSwiftChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DF131525C151C500AD3134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DF131E25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7DF131025C151C500AD3134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DF12F725C151C200AD3134 /* RaketaSwiftChallenge */;
+			targetProxy = F7DF130F25C151C500AD3134 /* PBXContainerItemProxy */;
+		};
+		F7DF131B25C151C500AD3134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DF12F725C151C200AD3134 /* RaketaSwiftChallenge */;
+			targetProxy = F7DF131A25C151C500AD3134 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7DF130125C151C200AD3134 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7DF130225C151C200AD3134 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7DF130725C151C500AD3134 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7DF132025C151C500AD3134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7DF132125C151C500AD3134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7DF132325C151C500AD3134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
+				INFOPLIST_FILE = RaketaSwiftChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7DF132425C151C500AD3134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
+				INFOPLIST_FILE = RaketaSwiftChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7DF132625C151C500AD3134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
+				INFOPLIST_FILE = RaketaSwiftChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaketaSwiftChallenge.app/RaketaSwiftChallenge";
+			};
+			name = Debug;
+		};
+		F7DF132725C151C500AD3134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
+				INFOPLIST_FILE = RaketaSwiftChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaketaSwiftChallenge.app/RaketaSwiftChallenge";
+			};
+			name = Release;
+		};
+		F7DF132925C151C500AD3134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
+				INFOPLIST_FILE = RaketaSwiftChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaketaSwiftChallenge;
+			};
+			name = Debug;
+		};
+		F7DF132A25C151C500AD3134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
+				INFOPLIST_FILE = RaketaSwiftChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaketaSwiftChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7DF12F325C151C200AD3134 /* Build configuration list for PBXProject "RaketaSwiftChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DF132025C151C500AD3134 /* Debug */,
+				F7DF132125C151C500AD3134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DF132225C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DF132325C151C500AD3134 /* Debug */,
+				F7DF132425C151C500AD3134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DF132525C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DF132625C151C500AD3134 /* Debug */,
+				F7DF132725C151C500AD3134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DF132825C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DF132925C151C500AD3134 /* Debug */,
+				F7DF132A25C151C500AD3134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7DF12F025C151C200AD3134 /* Project object */;
+}
