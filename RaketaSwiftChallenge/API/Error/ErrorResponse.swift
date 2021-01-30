@@ -12,7 +12,7 @@ enum ResponseError: Error {
     case networkError
     case decodingError
     case noDataError
-    case noInternetConnection
+    case noInternetConnectionError
     
     var reason: String {
         switch self {
@@ -22,7 +22,7 @@ enum ResponseError: Error {
             return "An error occurred while decoding data".localizedString
         case .noDataError:
             return "Ooops it seems there no data".localizedString
-        case .noInternetConnection:
+        case .noInternetConnectionError:
             return "Please check your internet conection and try again".localizedString
         }
     }

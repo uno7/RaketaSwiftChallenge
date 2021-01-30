@@ -36,7 +36,7 @@ final class NetworkService : Service{
     
     func getTopPosts(nextID:String, completionBlock: @escaping(Result<GetPostsResponse, ResponseError>) -> Void) {
         if !self.isAvailableInternet {
-            completionBlock(.failure(ResponseError.noInternetConnection))
+            completionBlock(.failure(ResponseError.noInternetConnectionError))
         }
         let request = TopPostsRequest(nextID: nextID)
         URLSession.shared.dataTask(with: request.urlRequest) { (data, response, error) in

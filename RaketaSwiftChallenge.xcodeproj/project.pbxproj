@@ -18,6 +18,8 @@
 		F7901AB625C5B8F700BFF4F9 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901AB525C5B8F700BFF4F9 /* ErrorResponse.swift */; };
 		F7901ABC25C5B9BA00BFF4F9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901ABB25C5B9BA00BFF4F9 /* String+Extensions.swift */; };
 		F7901ACB25C5BC2500BFF4F9 /* TopPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */; };
+		F7901AFD25C608B100BFF4F9 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901AFC25C608B100BFF4F9 /* UIImageView+Extensions.swift */; };
+		F7901B0225C608CC00BFF4F9 /* UITableView+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B0125C608CC00BFF4F9 /* UITableView+Registration.swift */; };
 		F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FB25C151C200AD3134 /* AppDelegate.swift */; };
 		F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */; };
 		F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */; };
@@ -57,6 +59,8 @@
 		F7901AB525C5B8F700BFF4F9 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		F7901ABB25C5B9BA00BFF4F9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPostsViewModel.swift; sourceTree = "<group>"; };
+		F7901AFC25C608B100BFF4F9 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		F7901B0125C608CC00BFF4F9 /* UITableView+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Registration.swift"; sourceTree = "<group>"; };
 		F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaketaSwiftChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF12FB25C151C200AD3134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				F7901ABB25C5B9BA00BFF4F9 /* String+Extensions.swift */,
+				F7901B0125C608CC00BFF4F9 /* UITableView+Registration.swift */,
+				F7901AFC25C608B100BFF4F9 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -371,6 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7901B0225C608CC00BFF4F9 /* UITableView+Registration.swift in Sources */,
+				F7901AFD25C608B100BFF4F9 /* UIImageView+Extensions.swift in Sources */,
 				F7901ACB25C5BC2500BFF4F9 /* TopPostsViewModel.swift in Sources */,
 				F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */,
 				F7901ABC25C5B9BA00BFF4F9 /* String+Extensions.swift in Sources */,
