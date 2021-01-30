@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7901A8725C5B2A500BFF4F9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A8625C5B2A500BFF4F9 /* Config.swift */; };
+		F7901A8E25C5B3A100BFF4F9 /* GetPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A8D25C5B3A100BFF4F9 /* GetPostsRequest.swift */; };
+		F7901A9325C5B43400BFF4F9 /* GetPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A9225C5B43400BFF4F9 /* GetPostsResponse.swift */; };
+		F7901A9825C5B54000BFF4F9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A9725C5B54000BFF4F9 /* Service.swift */; };
+		F7901A9E25C5B6E600BFF4F9 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A9D25C5B6E600BFF4F9 /* Posts.swift */; };
+		F7901AA625C5B72E00BFF4F9 /* PostChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901AA525C5B72E00BFF4F9 /* PostChildren.swift */; };
+		F7901AAB25C5B78100BFF4F9 /* PostChildrenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901AAA25C5B78100BFF4F9 /* PostChildrenEntity.swift */; };
+		F7901AB025C5B88F00BFF4F9 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901AAF25C5B88F00BFF4F9 /* Preview.swift */; };
+		F7901AB625C5B8F700BFF4F9 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901AB525C5B8F700BFF4F9 /* ErrorResponse.swift */; };
+		F7901ABC25C5B9BA00BFF4F9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901ABB25C5B9BA00BFF4F9 /* String+Extensions.swift */; };
+		F7901ACB25C5BC2500BFF4F9 /* TopPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */; };
 		F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FB25C151C200AD3134 /* AppDelegate.swift */; };
 		F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */; };
-		F7DF130025C151C200AD3134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FF25C151C200AD3134 /* ViewController.swift */; };
+		F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */; };
 		F7DF130325C151C200AD3134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130125C151C200AD3134 /* Main.storyboard */; };
 		F7DF130525C151C500AD3134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130425C151C500AD3134 /* Assets.xcassets */; };
 		F7DF130825C151C500AD3134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */; };
@@ -35,10 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7901A8625C5B2A500BFF4F9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F7901A8D25C5B3A100BFF4F9 /* GetPostsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsRequest.swift; sourceTree = "<group>"; };
+		F7901A9225C5B43400BFF4F9 /* GetPostsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsResponse.swift; sourceTree = "<group>"; };
+		F7901A9725C5B54000BFF4F9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F7901A9D25C5B6E600BFF4F9 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		F7901AA525C5B72E00BFF4F9 /* PostChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostChildren.swift; sourceTree = "<group>"; };
+		F7901AAA25C5B78100BFF4F9 /* PostChildrenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostChildrenEntity.swift; sourceTree = "<group>"; };
+		F7901AAF25C5B88F00BFF4F9 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		F7901AB525C5B8F700BFF4F9 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		F7901ABB25C5B9BA00BFF4F9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPostsViewModel.swift; sourceTree = "<group>"; };
 		F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaketaSwiftChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF12FB25C151C200AD3134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7DF12FF25C151C200AD3134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPostsViewController.swift; sourceTree = "<group>"; };
 		F7DF130225C151C200AD3134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7DF130425C151C500AD3134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DF130725C151C500AD3134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +98,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7901A8225C5B17800BFF4F9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F7901AB425C5B8BE00BFF4F9 /* Error */,
+				F7901A9C25C5B56800BFF4F9 /* Models */,
+				F7901A8C25C5B34200BFF4F9 /* Requests */,
+				F7901A8B25C5B33B00BFF4F9 /* Responses */,
+				F7901A9725C5B54000BFF4F9 /* Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F7901A8325C5B1D400BFF4F9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F7901ABA25C5B92400BFF4F9 /* Extensions */,
+				F7901A8625C5B2A500BFF4F9 /* Config.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F7901A8425C5B1DA00BFF4F9 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				F7901AC325C5BAB200BFF4F9 /* TopPosts */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		F7901A8525C5B1E700BFF4F9 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		F7901A8B25C5B33B00BFF4F9 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				F7901A9225C5B43400BFF4F9 /* GetPostsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		F7901A8C25C5B34200BFF4F9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F7901A8D25C5B3A100BFF4F9 /* GetPostsRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F7901A9C25C5B56800BFF4F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7901A9D25C5B6E600BFF4F9 /* Posts.swift */,
+				F7901AA525C5B72E00BFF4F9 /* PostChildren.swift */,
+				F7901AAA25C5B78100BFF4F9 /* PostChildrenEntity.swift */,
+				F7901AAF25C5B88F00BFF4F9 /* Preview.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7901AB425C5B8BE00BFF4F9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F7901AB525C5B8F700BFF4F9 /* ErrorResponse.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F7901ABA25C5B92400BFF4F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7901ABB25C5B9BA00BFF4F9 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7901AC325C5BAB200BFF4F9 /* TopPosts */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */,
+				F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */,
+			);
+			path = TopPosts;
+			sourceTree = "<group>";
+		};
 		F7DF12EF25C151C200AD3134 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +209,12 @@
 		F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F7901A8525C5B1E700BFF4F9 /* Utilis */,
+				F7901A8425C5B1DA00BFF4F9 /* Stories */,
+				F7901A8325C5B1D400BFF4F9 /* Common */,
+				F7901A8225C5B17800BFF4F9 /* API */,
 				F7DF12FB25C151C200AD3134 /* AppDelegate.swift */,
 				F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */,
-				F7DF12FF25C151C200AD3134 /* ViewController.swift */,
 				F7DF130125C151C200AD3134 /* Main.storyboard */,
 				F7DF130425C151C500AD3134 /* Assets.xcassets */,
 				F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */,
@@ -258,9 +371,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DF130025C151C200AD3134 /* ViewController.swift in Sources */,
+				F7901ACB25C5BC2500BFF4F9 /* TopPostsViewModel.swift in Sources */,
+				F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */,
+				F7901ABC25C5B9BA00BFF4F9 /* String+Extensions.swift in Sources */,
+				F7901A9825C5B54000BFF4F9 /* Service.swift in Sources */,
+				F7901AB025C5B88F00BFF4F9 /* Preview.swift in Sources */,
+				F7901AB625C5B8F700BFF4F9 /* ErrorResponse.swift in Sources */,
+				F7901A8E25C5B3A100BFF4F9 /* GetPostsRequest.swift in Sources */,
+				F7901A8725C5B2A500BFF4F9 /* Config.swift in Sources */,
+				F7901A9325C5B43400BFF4F9 /* GetPostsResponse.swift in Sources */,
+				F7901AA625C5B72E00BFF4F9 /* PostChildren.swift in Sources */,
 				F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */,
+				F7901AAB25C5B78100BFF4F9 /* PostChildrenEntity.swift in Sources */,
 				F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */,
+				F7901A9E25C5B6E600BFF4F9 /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +570,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +589,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
