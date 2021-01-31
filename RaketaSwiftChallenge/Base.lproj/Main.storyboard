@@ -11,30 +11,36 @@
         <!--Top Posts View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TopPostsViewController" customModule="RaketaSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopPostsViewControllerID" id="BYZ-38-t0r" customClass="TopPostsViewController" customModule="RaketaSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YyO-Va-D3h">
-                                <rect key="frame" x="15" y="44" width="384" height="818"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YyO-Va-D3h">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="xsF-GZ-XEK"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="xPa-Hu-vNT"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="hWI-yh-1SH">
+                                <rect key="frame" x="197" y="200" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YyO-Va-D3h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8hf-Sl-hnq"/>
-                            <constraint firstItem="YyO-Va-D3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="SeM-sp-RMW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YyO-Va-D3h" secondAttribute="trailing" constant="15" id="aTW-l3-5p2"/>
+                            <constraint firstItem="YyO-Va-D3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SeM-sp-RMW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YyO-Va-D3h" secondAttribute="trailing" id="aTW-l3-5p2"/>
                             <constraint firstItem="YyO-Va-D3h" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="e0n-oj-aUF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="hWI-yh-1SH" id="PJs-Vt-sGC"/>
                         <outlet property="tableView" destination="YyO-Va-D3h" id="hc7-g3-lro"/>
                     </connections>
                 </viewController>

@@ -20,6 +20,12 @@
 		F7901ACB25C5BC2500BFF4F9 /* TopPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */; };
 		F7901AFD25C608B100BFF4F9 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901AFC25C608B100BFF4F9 /* UIImageView+Extensions.swift */; };
 		F7901B0225C608CC00BFF4F9 /* UITableView+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B0125C608CC00BFF4F9 /* UITableView+Registration.swift */; };
+		F7901B4125C6DB3300BFF4F9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B3F25C6DB3300BFF4F9 /* PostTableViewCell.swift */; };
+		F7901B4225C6DB3300BFF4F9 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7901B4025C6DB3300BFF4F9 /* PostTableViewCell.xib */; };
+		F7901B4725C6DBA500BFF4F9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B4625C6DBA500BFF4F9 /* Date+Extensions.swift */; };
+		F7901B4C25C6DD3900BFF4F9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B4B25C6DD3900BFF4F9 /* BaseViewController.swift */; };
+		F7901B5A25C6E15500BFF4F9 /* AppColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7901B5925C6E15500BFF4F9 /* AppColorAssets.xcassets */; };
+		F7901B5F25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B5E25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift */; };
 		F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FB25C151C200AD3134 /* AppDelegate.swift */; };
 		F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */; };
 		F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */; };
@@ -61,6 +67,12 @@
 		F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPostsViewModel.swift; sourceTree = "<group>"; };
 		F7901AFC25C608B100BFF4F9 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		F7901B0125C608CC00BFF4F9 /* UITableView+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Registration.swift"; sourceTree = "<group>"; };
+		F7901B3F25C6DB3300BFF4F9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		F7901B4025C6DB3300BFF4F9 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		F7901B4625C6DBA500BFF4F9 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		F7901B4B25C6DD3900BFF4F9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F7901B5925C6E15500BFF4F9 /* AppColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColorAssets.xcassets; sourceTree = "<group>"; };
+		F7901B5E25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityIndicator+Extensions.swift"; sourceTree = "<group>"; };
 		F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaketaSwiftChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF12FB25C151C200AD3134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F7901AC325C5BAB200BFF4F9 /* TopPosts */,
+				F7901B4B25C6DD3900BFF4F9 /* BaseViewController.swift */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -179,6 +192,8 @@
 				F7901ABB25C5B9BA00BFF4F9 /* String+Extensions.swift */,
 				F7901B0125C608CC00BFF4F9 /* UITableView+Registration.swift */,
 				F7901AFC25C608B100BFF4F9 /* UIImageView+Extensions.swift */,
+				F7901B4625C6DBA500BFF4F9 /* Date+Extensions.swift */,
+				F7901B5E25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,10 +201,29 @@
 		F7901AC325C5BAB200BFF4F9 /* TopPosts */ = {
 			isa = PBXGroup;
 			children = (
+				F7901B3E25C6DAD600BFF4F9 /* Views */,
 				F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */,
 				F7901ACA25C5BC2500BFF4F9 /* TopPostsViewModel.swift */,
 			);
 			path = TopPosts;
+			sourceTree = "<group>";
+		};
+		F7901B3E25C6DAD600BFF4F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7901B3F25C6DB3300BFF4F9 /* PostTableViewCell.swift */,
+				F7901B4025C6DB3300BFF4F9 /* PostTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7901B5025C6E0F700BFF4F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF130425C151C500AD3134 /* Assets.xcassets */,
+				F7901B5925C6E15500BFF4F9 /* AppColorAssets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F7DF12EF25C151C200AD3134 = {
@@ -215,6 +249,7 @@
 		F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F7901B5025C6E0F700BFF4F9 /* Resources */,
 				F7901A8525C5B1E700BFF4F9 /* Utilis */,
 				F7901A8425C5B1DA00BFF4F9 /* Stories */,
 				F7901A8325C5B1D400BFF4F9 /* Common */,
@@ -222,7 +257,6 @@
 				F7DF12FB25C151C200AD3134 /* AppDelegate.swift */,
 				F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */,
 				F7DF130125C151C200AD3134 /* Main.storyboard */,
-				F7DF130425C151C500AD3134 /* Assets.xcassets */,
 				F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */,
 				F7DF130925C151C500AD3134 /* Info.plist */,
 			);
@@ -351,8 +385,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7DF130825C151C500AD3134 /* LaunchScreen.storyboard in Resources */,
+				F7901B5A25C6E15500BFF4F9 /* AppColorAssets.xcassets in Resources */,
 				F7DF130525C151C500AD3134 /* Assets.xcassets in Resources */,
 				F7DF130325C151C200AD3134 /* Main.storyboard in Resources */,
+				F7901B4225C6DB3300BFF4F9 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,14 +415,18 @@
 			files = (
 				F7901B0225C608CC00BFF4F9 /* UITableView+Registration.swift in Sources */,
 				F7901AFD25C608B100BFF4F9 /* UIImageView+Extensions.swift in Sources */,
+				F7901B4125C6DB3300BFF4F9 /* PostTableViewCell.swift in Sources */,
 				F7901ACB25C5BC2500BFF4F9 /* TopPostsViewModel.swift in Sources */,
+				F7901B4C25C6DD3900BFF4F9 /* BaseViewController.swift in Sources */,
 				F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */,
 				F7901ABC25C5B9BA00BFF4F9 /* String+Extensions.swift in Sources */,
 				F7901A9825C5B54000BFF4F9 /* Service.swift in Sources */,
 				F7901AB025C5B88F00BFF4F9 /* Preview.swift in Sources */,
 				F7901AB625C5B8F700BFF4F9 /* ErrorResponse.swift in Sources */,
+				F7901B5F25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift in Sources */,
 				F7901A8E25C5B3A100BFF4F9 /* GetPostsRequest.swift in Sources */,
 				F7901A8725C5B2A500BFF4F9 /* Config.swift in Sources */,
+				F7901B4725C6DBA500BFF4F9 /* Date+Extensions.swift in Sources */,
 				F7901A9325C5B43400BFF4F9 /* GetPostsResponse.swift in Sources */,
 				F7901AA625C5B72E00BFF4F9 /* PostChildren.swift in Sources */,
 				F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */,

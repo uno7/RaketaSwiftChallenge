@@ -24,4 +24,9 @@ struct PostChildrenEntity:Codable {
              preview,
              comments = "num_comments"
     }
+    
+    var timeAgo:String{
+        let date = Date(timeIntervalSince1970: TimeInterval(created))
+        return date.getElapsedInterval()
+    }
 }
