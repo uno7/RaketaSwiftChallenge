@@ -57,7 +57,7 @@ final class TopPostsViewModel{
             self.posts.removeAll()
             totalCount = 0
         }
-        networkService.getTopPosts(nextID: nextID) {
+        networkService.getTopPosts(request:TopPostsRequest(nextID: nextID)){
            [weak self]  (result) in
             guard let strongSelf = self else {return}
             switch result {

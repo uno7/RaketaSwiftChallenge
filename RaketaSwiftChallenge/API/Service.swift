@@ -14,14 +14,12 @@ protocol Request {
 }
 
 protocol Service{
-    func  getTopPosts(nextID:String, completionBlock:@escaping(Result<GetPostsResponse,ResponseError>) -> Void)
+    func  getTopPosts(request:Request, completionBlock:@escaping(Result<GetPostsResponse,ResponseError>) -> Void)
 }
 
 final class NetworkService : Service{
-   
     private let monitor = NWPathMonitor()
     private var isAvailableInternet = true
-    
     init() {
         setNetworkMonitor()
     }
@@ -34,11 +32,10 @@ final class NetworkService : Service{
         }
     }
     
-    func getTopPosts(nextID:String, completionBlock: @escaping(Result<GetPostsResponse, ResponseError>) -> Void) {
+    func getTopPosts(request:Request, completionBlock: @escaping(Result<GetPostsResponse, ResponseError>) -> Void) {
         if !self.isAvailableInternet {
             completionBlock(.failure(ResponseError.noInternetConnectionError))
         }
-        let request = TopPostsRequest(nextID: nextID)
         URLSession.shared.dataTask(with: request.urlRequest) { (data, response, error) in
             if error != nil {completionBlock(.failure(ResponseError.networkError))}
             guard let data = data else {completionBlock(.failure(ResponseError.noDataError))
