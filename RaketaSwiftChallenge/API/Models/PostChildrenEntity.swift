@@ -29,4 +29,8 @@ struct PostChildrenEntity:Codable {
         let date = Date(timeIntervalSince1970: TimeInterval(created))
         return date.getElapsedInterval()
     }
+    
+    var imageUrl:String?{
+        preview?.images.first?.source.url?.htmlToString
+    }
 }

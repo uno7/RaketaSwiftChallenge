@@ -42,11 +42,49 @@
                     <connections>
                         <outlet property="activityIndicatorView" destination="hWI-yh-1SH" id="PJs-Vt-sGC"/>
                         <outlet property="tableView" destination="YyO-Va-D3h" id="hc7-g3-lro"/>
+                        <segue destination="PH9-qv-LRE" kind="show" identifier="PostVCToImageDetailsVCSegue" id="UGr-cE-GQU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="105.80357142857143"/>
+            <point key="canvasLocation" x="-1641" y="110"/>
+        </scene>
+        <!--Image Details View Controller-->
+        <scene sceneID="5u9-Vy-kc3">
+            <objects>
+                <viewController id="PH9-qv-LRE" customClass="ImageDetailsViewController" customModule="RaketaSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49o-hA-su0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-fQ-bwp">
+                                <rect key="frame" x="188.5" y="402.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxc-mD-440">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4kw-xp-xhz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uxc-mD-440" firstAttribute="leading" secondItem="4kw-xp-xhz" secondAttribute="leading" id="AbH-aL-7P1"/>
+                            <constraint firstItem="ucR-fQ-bwp" firstAttribute="centerX" secondItem="49o-hA-su0" secondAttribute="centerX" id="CV8-o2-DbA"/>
+                            <constraint firstItem="uxc-mD-440" firstAttribute="top" secondItem="4kw-xp-xhz" secondAttribute="top" id="SP6-52-9MQ"/>
+                            <constraint firstItem="uxc-mD-440" firstAttribute="bottom" secondItem="4kw-xp-xhz" secondAttribute="bottom" id="dvT-U6-shx"/>
+                            <constraint firstItem="uxc-mD-440" firstAttribute="trailing" secondItem="4kw-xp-xhz" secondAttribute="trailing" id="s0d-NV-rqO"/>
+                            <constraint firstItem="ucR-fQ-bwp" firstAttribute="centerY" secondItem="49o-hA-su0" secondAttribute="centerY" id="x8M-9u-DwO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7gF-2w-lN7"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="ucR-fQ-bwp" id="wF2-op-UdI"/>
+                        <outlet property="imageView" destination="uxc-mD-440" id="ERa-EF-buL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnn-kd-BXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942.02898550724649" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>

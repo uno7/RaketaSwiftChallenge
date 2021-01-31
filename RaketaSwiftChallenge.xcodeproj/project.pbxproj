@@ -26,6 +26,8 @@
 		F7901B4C25C6DD3900BFF4F9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B4B25C6DD3900BFF4F9 /* BaseViewController.swift */; };
 		F7901B5A25C6E15500BFF4F9 /* AppColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7901B5925C6E15500BFF4F9 /* AppColorAssets.xcassets */; };
 		F7901B5F25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B5E25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift */; };
+		F7901B6825C738C500BFF4F9 /* ImageDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B6725C738C400BFF4F9 /* ImageDetailsViewModel.swift */; };
+		F7901B7025C738E500BFF4F9 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B6F25C738E500BFF4F9 /* ImageDetailsViewController.swift */; };
 		F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FB25C151C200AD3134 /* AppDelegate.swift */; };
 		F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */; };
 		F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */; };
@@ -73,6 +75,8 @@
 		F7901B4B25C6DD3900BFF4F9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F7901B5925C6E15500BFF4F9 /* AppColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColorAssets.xcassets; sourceTree = "<group>"; };
 		F7901B5E25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityIndicator+Extensions.swift"; sourceTree = "<group>"; };
+		F7901B6725C738C400BFF4F9 /* ImageDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewModel.swift; sourceTree = "<group>"; };
+		F7901B6F25C738E500BFF4F9 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
 		F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaketaSwiftChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF12FB25C151C200AD3134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		F7901A8425C5B1DA00BFF4F9 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				F7901B6625C7389700BFF4F9 /* ImageDetails */,
 				F7901AC325C5BAB200BFF4F9 /* TopPosts */,
 				F7901B4B25C6DD3900BFF4F9 /* BaseViewController.swift */,
 			);
@@ -224,6 +229,15 @@
 				F7901B5925C6E15500BFF4F9 /* AppColorAssets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7901B6625C7389700BFF4F9 /* ImageDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F7901B6725C738C400BFF4F9 /* ImageDetailsViewModel.swift */,
+				F7901B6F25C738E500BFF4F9 /* ImageDetailsViewController.swift */,
+			);
+			path = ImageDetails;
 			sourceTree = "<group>";
 		};
 		F7DF12EF25C151C200AD3134 = {
@@ -417,6 +431,7 @@
 				F7901AFD25C608B100BFF4F9 /* UIImageView+Extensions.swift in Sources */,
 				F7901B4125C6DB3300BFF4F9 /* PostTableViewCell.swift in Sources */,
 				F7901ACB25C5BC2500BFF4F9 /* TopPostsViewModel.swift in Sources */,
+				F7901B6825C738C500BFF4F9 /* ImageDetailsViewModel.swift in Sources */,
 				F7901B4C25C6DD3900BFF4F9 /* BaseViewController.swift in Sources */,
 				F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */,
 				F7901ABC25C5B9BA00BFF4F9 /* String+Extensions.swift in Sources */,
@@ -432,6 +447,7 @@
 				F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */,
 				F7901AAB25C5B78100BFF4F9 /* PostChildrenEntity.swift in Sources */,
 				F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */,
+				F7901B7025C738E500BFF4F9 /* ImageDetailsViewController.swift in Sources */,
 				F7901A9E25C5B6E600BFF4F9 /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

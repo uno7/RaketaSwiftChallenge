@@ -27,8 +27,11 @@ final class NetworkService : Service{
     private func setNetworkMonitor() {
         let queue = DispatchQueue(label: "NetworkMonitor")
         monitor.pathUpdateHandler = { [weak self] path in
-            self?.isAvailableInternet = path.status == .satisfied
-            self?.monitor.start(queue: queue)
+            guard let strongSelf = self  else {
+                return
+            }
+            strongSelf.isAvailableInternet = path.status == .satisfied
+            strongSelf.monitor.start(queue: queue)
         }
     }
     
