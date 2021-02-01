@@ -26,6 +26,8 @@ final class TopPostsViewModel{
         posts = []
     }
     
+    // MARK: - Accessors
+    
     var postsCount:Int{
         return totalCount
     }

@@ -28,6 +28,9 @@
 		F7901B5F25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B5E25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift */; };
 		F7901B6825C738C500BFF4F9 /* ImageDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B6725C738C400BFF4F9 /* ImageDetailsViewModel.swift */; };
 		F7901B7025C738E500BFF4F9 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B6F25C738E500BFF4F9 /* ImageDetailsViewController.swift */; };
+		F7901B7C25C7693700BFF4F9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B7B25C7693600BFF4F9 /* Coordinator.swift */; };
+		F7901B8125C769F200BFF4F9 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B8025C769F200BFF4F9 /* Storyboarded.swift */; };
+		F7901B8625C76C6400BFF4F9 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901B8525C76C6400BFF4F9 /* MainCoordinator.swift */; };
 		F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FB25C151C200AD3134 /* AppDelegate.swift */; };
 		F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */; };
 		F7DF130025C151C200AD3134 /* TopPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF12FF25C151C200AD3134 /* TopPostsViewController.swift */; };
@@ -77,6 +80,9 @@
 		F7901B5E25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityIndicator+Extensions.swift"; sourceTree = "<group>"; };
 		F7901B6725C738C400BFF4F9 /* ImageDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewModel.swift; sourceTree = "<group>"; };
 		F7901B6F25C738E500BFF4F9 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
+		F7901B7B25C7693600BFF4F9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F7901B8025C769F200BFF4F9 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F7901B8525C76C6400BFF4F9 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaketaSwiftChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF12FB25C151C200AD3134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +246,17 @@
 			path = ImageDetails;
 			sourceTree = "<group>";
 		};
+		F7901B7A25C7691100BFF4F9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F7901B7B25C7693600BFF4F9 /* Coordinator.swift */,
+				F7901B8025C769F200BFF4F9 /* Storyboarded.swift */,
+				F7901B8525C76C6400BFF4F9 /* MainCoordinator.swift */,
+				F7DF130125C151C200AD3134 /* Main.storyboard */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		F7DF12EF25C151C200AD3134 = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +280,7 @@
 		F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F7901B7A25C7691100BFF4F9 /* Navigation */,
 				F7901B5025C6E0F700BFF4F9 /* Resources */,
 				F7901A8525C5B1E700BFF4F9 /* Utilis */,
 				F7901A8425C5B1DA00BFF4F9 /* Stories */,
@@ -270,7 +288,6 @@
 				F7901A8225C5B17800BFF4F9 /* API */,
 				F7DF12FB25C151C200AD3134 /* AppDelegate.swift */,
 				F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */,
-				F7DF130125C151C200AD3134 /* Main.storyboard */,
 				F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */,
 				F7DF130925C151C500AD3134 /* Info.plist */,
 			);
@@ -440,15 +457,18 @@
 				F7901AB625C5B8F700BFF4F9 /* ErrorResponse.swift in Sources */,
 				F7901B5F25C6F9A700BFF4F9 /* ActivityIndicator+Extensions.swift in Sources */,
 				F7901A8E25C5B3A100BFF4F9 /* GetPostsRequest.swift in Sources */,
+				F7901B8625C76C6400BFF4F9 /* MainCoordinator.swift in Sources */,
 				F7901A8725C5B2A500BFF4F9 /* Config.swift in Sources */,
 				F7901B4725C6DBA500BFF4F9 /* Date+Extensions.swift in Sources */,
 				F7901A9325C5B43400BFF4F9 /* GetPostsResponse.swift in Sources */,
 				F7901AA625C5B72E00BFF4F9 /* PostChildren.swift in Sources */,
+				F7901B7C25C7693700BFF4F9 /* Coordinator.swift in Sources */,
 				F7DF12FC25C151C200AD3134 /* AppDelegate.swift in Sources */,
 				F7901AAB25C5B78100BFF4F9 /* PostChildrenEntity.swift in Sources */,
 				F7DF12FE25C151C200AD3134 /* SceneDelegate.swift in Sources */,
 				F7901B7025C738E500BFF4F9 /* ImageDetailsViewController.swift in Sources */,
 				F7901A9E25C5B6E600BFF4F9 /* Posts.swift in Sources */,
+				F7901B8125C769F200BFF4F9 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@
         <!--Top Posts View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="TopPostsViewControllerID" id="BYZ-38-t0r" customClass="TopPostsViewController" customModule="RaketaSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopPostsViewController" id="BYZ-38-t0r" customClass="TopPostsViewController" customModule="RaketaSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,6 @@
                     <connections>
                         <outlet property="activityIndicatorView" destination="hWI-yh-1SH" id="PJs-Vt-sGC"/>
                         <outlet property="tableView" destination="YyO-Va-D3h" id="hc7-g3-lro"/>
-                        <segue destination="PH9-qv-LRE" kind="show" identifier="PostVCToImageDetailsVCSegue" id="UGr-cE-GQU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -52,17 +51,17 @@
         <!--Image Details View Controller-->
         <scene sceneID="5u9-Vy-kc3">
             <objects>
-                <viewController id="PH9-qv-LRE" customClass="ImageDetailsViewController" customModule="RaketaSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageDetailsViewController" id="PH9-qv-LRE" customClass="ImageDetailsViewController" customModule="RaketaSwiftChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="49o-hA-su0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-fQ-bwp">
-                                <rect key="frame" x="188.5" y="402.5" width="37" height="37"/>
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxc-mD-440">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4kw-xp-xhz"/>

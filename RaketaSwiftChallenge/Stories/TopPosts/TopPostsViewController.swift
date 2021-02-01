@@ -9,14 +9,11 @@ import UIKit
 
 class TopPostsViewController: BaseViewController {
     
-    var post:PostChildrenEntity?
+    weak var coordinator:MainCoordinator?
     
     //MARK:- Outlets
     @IBOutlet var tableView: UITableView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
-    
-    var viewModel:TopPostsViewModel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +25,12 @@ class TopPostsViewController: BaseViewController {
     }
     
     //MARK:- private properties
+    private var viewModel:TopPostsViewModel!
     private let tableViewRefreshControl = UIRefreshControl()
     
     //MARK:- private methods
     private func setUi(){
-        self.navigationItem.title = "Top Posts"
+        self.navigationItem.title = "Reddit Posts"
     }
     
     private func setViewModel(){
@@ -71,13 +69,6 @@ class TopPostsViewController: BaseViewController {
     @objc private func startPullToRefresh() {
         viewModel.fetchPosts(isRefresh: true)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "PostVCToImageDetailsVCSegue" else { return }
-        guard let destination = segue.destination as? ImageDetailsViewController else { return }
-        destination.imageUrl = post?.imageUrl
-    }
-
 }
 
 //MARK:- TableView
@@ -109,23 +100,25 @@ extension TopPostsViewController: TopPostsViewModelDelegate {
     func topPostsViewModelOnFetchFailed(with reason: String){
         stopActivityIndicator()
         tableViewRefreshControl.endRefreshing()
-        let title = "Error".localizedString
         let okAction = UIAlertAction(title: "OK".localizedString, style: .default)
-        showAlert(title: title, message: reason, actions: [okAction])
+        showAlert(title: "Error".localizedString,
+                  message: reason,
+                  actions: [okAction])
     }
 }
 
 extension TopPostsViewController : PostTableViewCellDelegate {
     func postCellThumbnailTapped(cell: PostTableViewCell) {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
-        post = viewModel.item(at: indexPath)
-        guard let _ = post?.imageUrl else {
-            let title = "Error".localizedString
+        let post = viewModel.item(at: indexPath)
+        guard let imageUrl = post?.imageUrl else {
             let okAction = UIAlertAction(title: "OK".localizedString, style: .default)
-            showAlert(title: title, message: "You can't to download this image", actions: [okAction])
+            showAlert(title: "Error".localizedString,
+                      message: "You can't to download this image",
+                      actions: [okAction])
             return
         }
-        performSegue(withIdentifier: "PostVCToImageDetailsVCSegue", sender: self)
+        coordinator?.transitonToImageDetailsViewController(imageUrl:imageUrl)
     }
     
 

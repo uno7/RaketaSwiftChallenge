@@ -8,7 +8,8 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
+    var coordinator:MainCoordinator?
     var window: UIWindow?
 
 
@@ -17,11 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow.init(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TopPostsViewControllerID")
-        window?.rootViewController = UINavigationController(rootViewController:vc)
-        window?.windowScene = windowScene
+        
+        let navigationController = UINavigationController ()
+        coordinator = MainCoordinator.init(navigationController: navigationController)
+        coordinator?.start()
+        
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 

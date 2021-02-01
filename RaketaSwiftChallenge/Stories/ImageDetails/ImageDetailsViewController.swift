@@ -14,7 +14,7 @@ class ImageDetailsViewController: BaseViewController {
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     var imageUrl:String?
-    var viewModel:ImageDetailsViewModel!
+    weak var coordinator:MainCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +24,15 @@ class ImageDetailsViewController: BaseViewController {
         imageView.loadImage(urlString: imageUrl) {[weak self] (isFinished) in
             guard let strongSelf = self else {return}
             strongSelf.activityIndicatorView.stopExecutionOnAMainThread()
-            strongSelf.imageDownloadCompleted?(isFinished)
+            strongSelf.imageDownloadFinished?(isFinished)
         }
     }
     
     //MARK:- private properties
     
-    private var imageDownloadCompleted:((Bool)->())?
+    private var viewModel:ImageDetailsViewModel!
+    private var imageDownloadFinished:((Bool)->())?
+    
     
     //MARK:- private methods
    private func setActivityIndicator(){
@@ -44,7 +46,7 @@ class ImageDetailsViewController: BaseViewController {
     
     private func setUi (){
         navigationItem.title = "Image Details"
-        imageDownloadCompleted = { [weak self] (isFinished) in
+        imageDownloadFinished = { [weak self] (isFinished) in
             guard let strongSelf = self else {return}
             if !isFinished {
                 let okAction = UIAlertAction(title: "OK".localizedString, style: .default)
@@ -90,7 +92,8 @@ extension ImageDetailsViewController : ImageDetailsViewModelDelegate{
         let message = error == nil ? "Image have been saved successfully".localizedString : "Unable to save photo".localizedString
         let okAction = UIAlertAction(title: "OK".localizedString, style: .default)
         showAlert(title: "Message".localizedString,
-                  message: message, actions:[okAction])
+                  message: message,
+                  actions:[okAction])
         navigationItem.rightBarButtonItem?.isEnabled = error == nil ? false : true
     }
 }
