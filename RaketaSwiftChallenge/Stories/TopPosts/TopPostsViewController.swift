@@ -9,11 +9,16 @@ import UIKit
 
 class TopPostsViewController: BaseViewController {
     
-    weak var coordinator:MainCoordinator?
-    
     //MARK:- Outlets
     @IBOutlet var tableView: UITableView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    
+    weak var coordinator:MainCoordinator?
+ 
+    //MARK:-restoration app properties
+    
+    var restorationInfo: [AnyHashable: Any]?
+    var didFirstWillLayout = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +29,29 @@ class TopPostsViewController: BaseViewController {
         setViewModel()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.userActivity = self.view.window?.windowScene?.userActivity
+        self.restorationInfo = nil
+    }
+    //MARK:- restoration method (responsible for creating the view hierarchy in both normal and restore cases)
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if didFirstWillLayout { return }
+        didFirstWillLayout = true
+        let key = ImageDetailsViewController.restorationKey
+        let info = self.restorationInfo
+        if let editing = info?[key] as? Bool, editing {
+            guard let imageUrl = (info?["imageUrl"]) as? String else {
+                return
+            }
+            self.userActivity?.addUserInfoEntries(from: [key: false])
+            coordinator?.transitonToImageDetailsViewController(imageUrl:imageUrl)
+        }
+    }
+    
     //MARK:- private properties
+    
     private var viewModel:TopPostsViewModel!
     private let tableViewRefreshControl = UIRefreshControl()
     
@@ -35,7 +62,7 @@ class TopPostsViewController: BaseViewController {
     
     private func setViewModel(){
         viewModel = TopPostsViewModel(delegate: self)
-        viewModel.fetchPosts(isRefresh: false)
+        viewModel.getPostsWithRestorationState(restorationInfo:self.restorationInfo)
     }
     
     private func setTableView (){
@@ -69,6 +96,25 @@ class TopPostsViewController: BaseViewController {
     @objc private func startPullToRefresh() {
         viewModel.fetchPosts(isRefresh: true)
     }
+    
+    //MARK:- user activity
+    
+    override func updateUserActivityState(_ activity: NSUserActivity) {
+        super.updateUserActivityState(activity)
+        if viewModel.returnPosts().isEmpty {
+            return
+        }
+        var indexPathRow = 0
+        if let visible = tableView.indexPathsForVisibleRows,
+           !visible.isEmpty {
+            let indexPath =  visible[0]
+            indexPathRow = indexPath.row
+        }
+
+        let post = viewModel.returnPost(at: indexPathRow)
+        activity.addUserInfoEntries(from: ["postId": post?.name as Any])
+    }
+    
 }
 
 //MARK:- TableView
@@ -118,6 +164,7 @@ extension TopPostsViewController : PostTableViewCellDelegate {
                       actions: [okAction])
             return
         }
+        self.userActivity?.addUserInfoEntries(from: ["postId": post?.name as Any])
         coordinator?.transitonToImageDetailsViewController(imageUrl:imageUrl)
     }
     

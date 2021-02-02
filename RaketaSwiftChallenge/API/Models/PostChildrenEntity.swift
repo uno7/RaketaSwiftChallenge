@@ -15,6 +15,7 @@ struct PostChildrenEntity:Codable {
     let title: String
     let thumbnail: String
     let preview: Preview?
+    let name:String
     
     private enum CodingKeys: String, CodingKey {
         case author,
@@ -22,6 +23,7 @@ struct PostChildrenEntity:Codable {
              title,
              thumbnail,
              preview,
+             name,
              comments = "num_comments"
     }
     

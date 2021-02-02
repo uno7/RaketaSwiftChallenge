@@ -18,7 +18,6 @@ final class TopPostsViewModel{
     private var posts = [PostChildren]()
     private var nextID = ""
     private var totalCount = 0
-    private var isLoading = false
     
     init(delegate:TopPostsViewModelDelegate) {
         self.delegate = delegate;
@@ -79,5 +78,24 @@ final class TopPostsViewModel{
             
         }
     }
+    //MARK:- restoration Accessors
     
+    func returnPosts() -> [PostChildren] {
+        let items = posts
+        return items
+    }
+    
+    func returnPost(at index:Int) -> PostChildrenEntity? {
+        return posts[index].data
+    }
+    
+    func getPostsWithRestorationState(restorationInfo: [AnyHashable: Any]?) {
+        var postId = ""
+        if let info = restorationInfo,
+           let localPostId = info["postId"] as? String  {
+            postId = localPostId
+        }
+        self.nextID = postId
+        self.fetchPosts(isRefresh: false)
+    }
 }

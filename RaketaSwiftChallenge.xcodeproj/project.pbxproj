@@ -38,18 +38,10 @@
 		F7DF130525C151C500AD3134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130425C151C500AD3134 /* Assets.xcassets */; };
 		F7DF130825C151C500AD3134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */; };
 		F7DF131325C151C500AD3134 /* RaketaSwiftChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF131225C151C500AD3134 /* RaketaSwiftChallengeTests.swift */; };
-		F7DF131E25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF131D25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F7DF130F25C151C500AD3134 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F7DF12F025C151C200AD3134 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7DF12F725C151C200AD3134;
-			remoteInfo = RaketaSwiftChallenge;
-		};
-		F7DF131A25C151C500AD3134 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F7DF12F025C151C200AD3134 /* Project object */;
 			proxyType = 1;
@@ -94,9 +86,6 @@
 		F7DF130E25C151C500AD3134 /* RaketaSwiftChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaketaSwiftChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF131225C151C500AD3134 /* RaketaSwiftChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaketaSwiftChallengeTests.swift; sourceTree = "<group>"; };
 		F7DF131425C151C500AD3134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7DF131925C151C500AD3134 /* RaketaSwiftChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaketaSwiftChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7DF131D25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaketaSwiftChallengeUITests.swift; sourceTree = "<group>"; };
-		F7DF131F25C151C500AD3134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +97,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F7DF130B25C151C500AD3134 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7DF131625C151C500AD3134 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,7 +246,6 @@
 			children = (
 				F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */,
 				F7DF131125C151C500AD3134 /* RaketaSwiftChallengeTests */,
-				F7DF131C25C151C500AD3134 /* RaketaSwiftChallengeUITests */,
 				F7DF12F925C151C200AD3134 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -274,7 +255,6 @@
 			children = (
 				F7DF12F825C151C200AD3134 /* RaketaSwiftChallenge.app */,
 				F7DF130E25C151C500AD3134 /* RaketaSwiftChallengeTests.xctest */,
-				F7DF131925C151C500AD3134 /* RaketaSwiftChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,15 +281,6 @@
 				F7DF131425C151C500AD3134 /* Info.plist */,
 			);
 			path = RaketaSwiftChallengeTests;
-			sourceTree = "<group>";
-		};
-		F7DF131C25C151C500AD3134 /* RaketaSwiftChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F7DF131D25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift */,
-				F7DF131F25C151C500AD3134 /* Info.plist */,
-			);
-			path = RaketaSwiftChallengeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,24 +321,6 @@
 			productReference = F7DF130E25C151C500AD3134 /* RaketaSwiftChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F7DF131825C151C500AD3134 /* RaketaSwiftChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7DF132825C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallengeUITests" */;
-			buildPhases = (
-				F7DF131525C151C500AD3134 /* Sources */,
-				F7DF131625C151C500AD3134 /* Frameworks */,
-				F7DF131725C151C500AD3134 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F7DF131B25C151C500AD3134 /* PBXTargetDependency */,
-			);
-			name = RaketaSwiftChallengeUITests;
-			productName = RaketaSwiftChallengeUITests;
-			productReference = F7DF131925C151C500AD3134 /* RaketaSwiftChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -381,10 +334,6 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					F7DF130D25C151C500AD3134 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = F7DF12F725C151C200AD3134;
-					};
-					F7DF131825C151C500AD3134 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = F7DF12F725C151C200AD3134;
 					};
@@ -405,7 +354,6 @@
 			targets = (
 				F7DF12F725C151C200AD3134 /* RaketaSwiftChallenge */,
 				F7DF130D25C151C500AD3134 /* RaketaSwiftChallengeTests */,
-				F7DF131825C151C500AD3134 /* RaketaSwiftChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -424,13 +372,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F7DF130C25C151C500AD3134 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7DF131725C151C500AD3134 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,14 +421,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7DF131525C151C500AD3134 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7DF131E25C151C500AD3134 /* RaketaSwiftChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -495,11 +428,6 @@
 			isa = PBXTargetDependency;
 			target = F7DF12F725C151C200AD3134 /* RaketaSwiftChallenge */;
 			targetProxy = F7DF130F25C151C500AD3134 /* PBXContainerItemProxy */;
-		};
-		F7DF131B25C151C500AD3134 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F7DF12F725C151C200AD3134 /* RaketaSwiftChallenge */;
-			targetProxy = F7DF131A25C151C500AD3134 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -721,46 +649,6 @@
 			};
 			name = Release;
 		};
-		F7DF132925C151C500AD3134 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
-				INFOPLIST_FILE = RaketaSwiftChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RaketaSwiftChallenge;
-			};
-			name = Debug;
-		};
-		F7DF132A25C151C500AD3134 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DB9KBQ6AT;
-				INFOPLIST_FILE = RaketaSwiftChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = vhlohov.RaketaSwiftChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RaketaSwiftChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -787,15 +675,6 @@
 			buildConfigurations = (
 				F7DF132625C151C500AD3134 /* Debug */,
 				F7DF132725C151C500AD3134 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7DF132825C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7DF132925C151C500AD3134 /* Debug */,
-				F7DF132A25C151C500AD3134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
