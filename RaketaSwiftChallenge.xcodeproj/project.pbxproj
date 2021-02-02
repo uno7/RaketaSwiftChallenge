@@ -155,13 +155,6 @@
 			path = Stories;
 			sourceTree = "<group>";
 		};
-		F7901A8525C5B1E700BFF4F9 /* Utilis */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilis;
-			sourceTree = "<group>";
-		};
 		F7901A8B25C5B33B00BFF4F9 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +250,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F7D2872325C8FF9100C07A4C /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF12FB25C151C200AD3134 /* AppDelegate.swift */,
+				F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
 		F7DF12EF25C151C200AD3134 = {
 			isa = PBXGroup;
 			children = (
@@ -280,14 +282,12 @@
 		F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2872325C8FF9100C07A4C /* Apps */,
 				F7901B7A25C7691100BFF4F9 /* Navigation */,
 				F7901B5025C6E0F700BFF4F9 /* Resources */,
-				F7901A8525C5B1E700BFF4F9 /* Utilis */,
 				F7901A8425C5B1DA00BFF4F9 /* Stories */,
 				F7901A8325C5B1D400BFF4F9 /* Common */,
 				F7901A8225C5B17800BFF4F9 /* API */,
-				F7DF12FB25C151C200AD3134 /* AppDelegate.swift */,
-				F7DF12FD25C151C200AD3134 /* SceneDelegate.swift */,
 				F7DF130625C151C500AD3134 /* LaunchScreen.storyboard */,
 				F7DF130925C151C500AD3134 /* Info.plist */,
 			);

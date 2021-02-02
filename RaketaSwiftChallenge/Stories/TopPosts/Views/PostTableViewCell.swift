@@ -46,12 +46,9 @@ class PostTableViewCell: UITableViewCell {
         thumbnailImageView.loadImage(urlString: data.thumbnail) {
             [weak self] (isFinish) in
             guard let strongSelf = self else {return}
-            if isFinish{
-                strongSelf.activityIndicatorView.stopExecutionOnAMainThread()
-                strongSelf.activityIndicatorView.isHidden = true
-                return
-            }
-            self?.thumbnailImageView.image = UIImage(named: "reddit")
+            strongSelf.activityIndicatorView.stopExecutionOnAMainThread()
+            strongSelf.activityIndicatorView.isHidden = true
+            strongSelf.thumbnailImageView.image = strongSelf.thumbnailImageView.image ?? UIImage(named: "reddit")
         }
         numberOfcommentsLabel.text = "\(data.comments)"
     }

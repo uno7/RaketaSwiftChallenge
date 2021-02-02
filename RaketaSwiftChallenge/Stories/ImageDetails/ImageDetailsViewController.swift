@@ -10,16 +10,17 @@ import Photos
 
 class ImageDetailsViewController: BaseViewController {
     
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     var imageUrl:String?
-    weak var coordinator:MainCoordinator?
+    weak var coordinator: MainCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewModel()
-        setActivityIndicator()
+        startActivityIndicator()
         setUi()
         imageView.loadImage(urlString: imageUrl) {[weak self] (isFinished) in
             guard let strongSelf = self else {return}
@@ -35,9 +36,19 @@ class ImageDetailsViewController: BaseViewController {
     
     
     //MARK:- private methods
-   private func setActivityIndicator(){
-        activityIndicatorView.style = .large
+   private func startActivityIndicator(){
+        self.contentView.alpha = 0.3
+        activityIndicatorView.isHidden = false
         activityIndicatorView.startAnimating()
+    }
+    
+    private func stopActivityIndicator(){
+        UIView.animate(withDuration: 0.3) {
+            self.activityIndicatorView.isHidden = true
+            self.contentView.alpha = 0
+        }
+        activityIndicatorView.stopExecutionOnAMainThread()
+        
     }
     
     private func setViewModel(){
@@ -48,6 +59,7 @@ class ImageDetailsViewController: BaseViewController {
         navigationItem.title = "Image Details"
         imageDownloadFinished = { [weak self] (isFinished) in
             guard let strongSelf = self else {return}
+            strongSelf.stopActivityIndicator()
             if !isFinished {
                 let okAction = UIAlertAction(title: "OK".localizedString, style: .default)
                 strongSelf.showAlert(title: "Error".localizedString
@@ -74,6 +86,7 @@ class ImageDetailsViewController: BaseViewController {
                     return
                 }
             DispatchQueue.main.async {
+                strongSelf.startActivityIndicator()
                 strongSelf.viewModel.saveImageToPhotoLibrary(image: strongSelf.imageView.image!)
             }
                 
@@ -95,5 +108,6 @@ extension ImageDetailsViewController : ImageDetailsViewModelDelegate{
                   message: message,
                   actions:[okAction])
         navigationItem.rightBarButtonItem?.isEnabled = error == nil ? false : true
+        stopActivityIndicator()
     }
 }

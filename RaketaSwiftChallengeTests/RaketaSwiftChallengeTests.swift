@@ -15,7 +15,7 @@ class NetworkServiceTests: XCTestCase {
         let expectation = self.expectation(description: "resource")
         var resourceData: GetPostsResponse?
         var resourceError: Error?
-        let request = MockRequest(url: URL(string: "https://www.reddit.com/top.json")!)
+        let request = MockRequest(url: URL(string:redditUrlString)!)
         service.getTopPosts(request: request) { (result) in
             switch result {
             case .success(let response):
@@ -35,7 +35,7 @@ class NetworkServiceTests: XCTestCase {
         let expectation = self.expectation(description: "resource")
         var resourceData: GetPostsResponse?
         var resourceError: Error?
-        let request = MockRequest(url: URL(string: "https://www.reddit.com/wrongUrl.json")!)
+        let request = MockRequest(url: URL(string:redditWrongUrlString)!)
         service.getTopPosts(request: request) { (result) in
             switch result {
             case .success(let data):
@@ -43,12 +43,10 @@ class NetworkServiceTests: XCTestCase {
             case .failure(let error):
                 resourceError = error
             }
-
             expectation.fulfill()
         }
-
+        
         waitForExpectations(timeout: 1, handler: nil)
-
         XCTAssertNil(resourceData)
         XCTAssertNotNil(resourceError)
     }
