@@ -18,6 +18,7 @@ final class TopPostsViewModel{
     private var posts = [PostChildren]()
     private var nextID = ""
     private var totalCount = 0
+    var isLoading = false
     
     init(delegate:TopPostsViewModelDelegate) {
         self.delegate = delegate;
@@ -53,14 +54,16 @@ final class TopPostsViewModel{
     }
     
     func fetchPosts(isRefresh:Bool)  {
-        if isRefresh {
+        if isRefresh{
             nextID = ""
             self.posts.removeAll()
             totalCount = 0
         }
+        isLoading = true;
         networkService.getTopPosts(request:TopPostsRequest(nextID: nextID)){
            [weak self]  (result) in
             guard let strongSelf = self else {return}
+            strongSelf.isLoading = false
             switch result {
             case .success(let response):
                 DispatchQueue.main.async {
@@ -78,8 +81,8 @@ final class TopPostsViewModel{
             
         }
     }
-    //MARK:- restoration Accessors
     
+    //MARK:- restoration Accessors
     func returnPosts() -> [PostChildren] {
         let items = posts
         return items

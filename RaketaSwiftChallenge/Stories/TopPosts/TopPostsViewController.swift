@@ -94,7 +94,15 @@ class TopPostsViewController: BaseViewController {
 
     // MARK: - Actions
     @objc private func startPullToRefresh() {
-        viewModel.fetchPosts(isRefresh: true)
+        if !viewModel.isLoading{
+            viewModel.fetchPosts(isRefresh: true)
+            return
+        }
+        let okAction = UIAlertAction(title: "OK".localizedString, style: .default)
+        showAlert(title: "Error".localizedString,
+                  message: "You can't to do pull to refresh during downloading next pages ",
+                  actions: [okAction])
+        
     }
     
     //MARK:- user activity
