@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3709695EACC33F5321A230 /* Pods_RaketaSwiftChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E4E4FF7B834A03D8685A80 /* Pods_RaketaSwiftChallengeTests.framework */; };
+		9790D329BE78A6F995BE89CF /* Pods_RaketaSwiftChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E3FC0CBFA9A163B5DAA6F9 /* Pods_RaketaSwiftChallenge.framework */; };
 		F7901A8725C5B2A500BFF4F9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A8625C5B2A500BFF4F9 /* Config.swift */; };
 		F7901A8E25C5B3A100BFF4F9 /* GetPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A8D25C5B3A100BFF4F9 /* GetPostsRequest.swift */; };
 		F7901A9325C5B43400BFF4F9 /* GetPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7901A9225C5B43400BFF4F9 /* GetPostsResponse.swift */; };
@@ -51,6 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150AA21B018B47ED6818E0CA /* Pods-RaketaSwiftChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaketaSwiftChallenge.debug.xcconfig"; path = "Target Support Files/Pods-RaketaSwiftChallenge/Pods-RaketaSwiftChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5AAF18DA5102D1B5EC3D6722 /* Pods-RaketaSwiftChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaketaSwiftChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-RaketaSwiftChallengeTests/Pods-RaketaSwiftChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		63E4E4FF7B834A03D8685A80 /* Pods_RaketaSwiftChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaketaSwiftChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73E3FC0CBFA9A163B5DAA6F9 /* Pods_RaketaSwiftChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaketaSwiftChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3B2671E1942773411818F9 /* Pods-RaketaSwiftChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaketaSwiftChallenge.release.xcconfig"; path = "Target Support Files/Pods-RaketaSwiftChallenge/Pods-RaketaSwiftChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		E8BEF074F3F25086C8CDC1EE /* Pods-RaketaSwiftChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaketaSwiftChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-RaketaSwiftChallengeTests/Pods-RaketaSwiftChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7901A8625C5B2A500BFF4F9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F7901A8D25C5B3A100BFF4F9 /* GetPostsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsRequest.swift; sourceTree = "<group>"; };
 		F7901A9225C5B43400BFF4F9 /* GetPostsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsResponse.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9790D329BE78A6F995BE89CF /* Pods_RaketaSwiftChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +109,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3709695EACC33F5321A230 /* Pods_RaketaSwiftChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9217AC6D051027B4FB036F42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73E3FC0CBFA9A163B5DAA6F9 /* Pods_RaketaSwiftChallenge.framework */,
+				63E4E4FF7B834A03D8685A80 /* Pods_RaketaSwiftChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E52CAE012D6B75B330CF3434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				150AA21B018B47ED6818E0CA /* Pods-RaketaSwiftChallenge.debug.xcconfig */,
+				DF3B2671E1942773411818F9 /* Pods-RaketaSwiftChallenge.release.xcconfig */,
+				E8BEF074F3F25086C8CDC1EE /* Pods-RaketaSwiftChallengeTests.debug.xcconfig */,
+				5AAF18DA5102D1B5EC3D6722 /* Pods-RaketaSwiftChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F7901A8225C5B17800BFF4F9 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +278,8 @@
 				F7DF12FA25C151C200AD3134 /* RaketaSwiftChallenge */,
 				F7DF131125C151C500AD3134 /* RaketaSwiftChallengeTests */,
 				F7DF12F925C151C200AD3134 /* Products */,
+				E52CAE012D6B75B330CF3434 /* Pods */,
+				9217AC6D051027B4FB036F42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7DF132225C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallenge" */;
 			buildPhases = (
+				6EEB6D9CB85F3518F194E6B9 /* [CP] Check Pods Manifest.lock */,
 				F7DF12F425C151C200AD3134 /* Sources */,
 				F7DF12F525C151C200AD3134 /* Frameworks */,
 				F7DF12F625C151C200AD3134 /* Resources */,
@@ -307,6 +341,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7DF132525C151C500AD3134 /* Build configuration list for PBXNativeTarget "RaketaSwiftChallengeTests" */;
 			buildPhases = (
+				D3F007A5573D961B9789EC03 /* [CP] Check Pods Manifest.lock */,
 				F7DF130A25C151C500AD3134 /* Sources */,
 				F7DF130B25C151C500AD3134 /* Frameworks */,
 				F7DF130C25C151C500AD3134 /* Resources */,
@@ -379,6 +414,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EEB6D9CB85F3518F194E6B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaketaSwiftChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F007A5573D961B9789EC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaketaSwiftChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F7DF12F425C151C200AD3134 /* Sources */ = {
@@ -569,6 +651,7 @@
 		};
 		F7DF132325C151C500AD3134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150AA21B018B47ED6818E0CA /* Pods-RaketaSwiftChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,6 +671,7 @@
 		};
 		F7DF132425C151C500AD3134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3B2671E1942773411818F9 /* Pods-RaketaSwiftChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -607,6 +691,7 @@
 		};
 		F7DF132625C151C500AD3134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8BEF074F3F25086C8CDC1EE /* Pods-RaketaSwiftChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -629,6 +714,7 @@
 		};
 		F7DF132725C151C500AD3134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AAF18DA5102D1B5EC3D6722 /* Pods-RaketaSwiftChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

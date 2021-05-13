@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248350612592CA9F6021CA572EC7E13D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2981C79DAAD855DCFDB2AEEE3D5DAA94 /* Pods-RaketaSwiftChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57FFE67B51D969F6AFD6304390F00D /* Pods-RaketaSwiftChallengeTests-dummy.m */; };
+		4D80AF4707D30A35A138D0177953691E /* Pods-RaketaSwiftChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A8B1B09EA69CB7001BBA9E8EA81DB8 /* Pods-RaketaSwiftChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52BD8036612CF5F72851CB1FC3AE2C52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E53BA11F984A791970E5917EF81A97A2 /* Pods-RaketaSwiftChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EF300D671F034E28379D0616F68DE5 /* Pods-RaketaSwiftChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F387E60DAD93D6CE0572CAC6C75A3C26 /* Pods-RaketaSwiftChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B961FC5C89DD04E78C963B0F4410BF /* Pods-RaketaSwiftChallenge-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B94697A3D2444413A30B21091791CB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0549A9EEB3E2306903F28BD69F9923D8;
+			remoteInfo = "Pods-RaketaSwiftChallenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05A8B1B09EA69CB7001BBA9E8EA81DB8 /* Pods-RaketaSwiftChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RaketaSwiftChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		2352B28465A5E2AF83230C2378178F63 /* Pods-RaketaSwiftChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RaketaSwiftChallengeTests.modulemap"; sourceTree = "<group>"; };
+		33C3849C7DC01D521F6386EB41A23F0A /* Pods-RaketaSwiftChallengeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RaketaSwiftChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		382A1375F799F4F474F9199F1F9D891B /* Pods-RaketaSwiftChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RaketaSwiftChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		39B961FC5C89DD04E78C963B0F4410BF /* Pods-RaketaSwiftChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RaketaSwiftChallenge-dummy.m"; sourceTree = "<group>"; };
+		6B656AEFF6801EC3CB2A8A4EC870FBCF /* Pods-RaketaSwiftChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaketaSwiftChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		726BCEEC5DC2AFA7233E327824552A1D /* Pods-RaketaSwiftChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RaketaSwiftChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9289C0573B211CDEDECE7780AF799132 /* Pods-RaketaSwiftChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RaketaSwiftChallenge.modulemap"; sourceTree = "<group>"; };
+		987F3A953EDC04A8A236CA56E298FFC4 /* Pods-RaketaSwiftChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RaketaSwiftChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C65C7E5D58A8E0A81C97E5368C4672D4 /* Pods-RaketaSwiftChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaketaSwiftChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C9734FC7AE22529D39BDF3C96CC1D983 /* Pods_RaketaSwiftChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RaketaSwiftChallengeTests.framework; path = "Pods-RaketaSwiftChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF16B213C6E674059895D40DFE23954 /* Pods-RaketaSwiftChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RaketaSwiftChallenge-Info.plist"; sourceTree = "<group>"; };
+		DB57FFE67B51D969F6AFD6304390F00D /* Pods-RaketaSwiftChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RaketaSwiftChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		DC10EFBA2321F1FC5B598CEDD4995476 /* Pods-RaketaSwiftChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaketaSwiftChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF1005D398A9CCE43BF4361113288B4F /* Pods-RaketaSwiftChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RaketaSwiftChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		E67CBEB84F635CA77DB46F5EF0B5B522 /* Pods_RaketaSwiftChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RaketaSwiftChallenge.framework; path = "Pods-RaketaSwiftChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EF300D671F034E28379D0616F68DE5 /* Pods-RaketaSwiftChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RaketaSwiftChallenge-umbrella.h"; sourceTree = "<group>"; };
+		FE2A7ECE4B7239BD5465DFD74AA8E629 /* Pods-RaketaSwiftChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaketaSwiftChallenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91F0E5135F655E76CB5B80C086DCEEB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248350612592CA9F6021CA572EC7E13D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89F34CDF7F8D43AD0C155D781E7625F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BD8036612CF5F72851CB1FC3AE2C52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6017AEF2A0F4BCF665B38E7C9C98EBAA /* Pods-RaketaSwiftChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2352B28465A5E2AF83230C2378178F63 /* Pods-RaketaSwiftChallengeTests.modulemap */,
+				726BCEEC5DC2AFA7233E327824552A1D /* Pods-RaketaSwiftChallengeTests-acknowledgements.markdown */,
+				382A1375F799F4F474F9199F1F9D891B /* Pods-RaketaSwiftChallengeTests-acknowledgements.plist */,
+				DB57FFE67B51D969F6AFD6304390F00D /* Pods-RaketaSwiftChallengeTests-dummy.m */,
+				33C3849C7DC01D521F6386EB41A23F0A /* Pods-RaketaSwiftChallengeTests-Info.plist */,
+				05A8B1B09EA69CB7001BBA9E8EA81DB8 /* Pods-RaketaSwiftChallengeTests-umbrella.h */,
+				6B656AEFF6801EC3CB2A8A4EC870FBCF /* Pods-RaketaSwiftChallengeTests.debug.xcconfig */,
+				DC10EFBA2321F1FC5B598CEDD4995476 /* Pods-RaketaSwiftChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-RaketaSwiftChallengeTests";
+			path = "Target Support Files/Pods-RaketaSwiftChallengeTests";
+			sourceTree = "<group>";
+		};
+		88F5ED3D920CC57BD576DFEF69D84F68 /* Pods-RaketaSwiftChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				9289C0573B211CDEDECE7780AF799132 /* Pods-RaketaSwiftChallenge.modulemap */,
+				987F3A953EDC04A8A236CA56E298FFC4 /* Pods-RaketaSwiftChallenge-acknowledgements.markdown */,
+				DF1005D398A9CCE43BF4361113288B4F /* Pods-RaketaSwiftChallenge-acknowledgements.plist */,
+				39B961FC5C89DD04E78C963B0F4410BF /* Pods-RaketaSwiftChallenge-dummy.m */,
+				CBF16B213C6E674059895D40DFE23954 /* Pods-RaketaSwiftChallenge-Info.plist */,
+				F2EF300D671F034E28379D0616F68DE5 /* Pods-RaketaSwiftChallenge-umbrella.h */,
+				C65C7E5D58A8E0A81C97E5368C4672D4 /* Pods-RaketaSwiftChallenge.debug.xcconfig */,
+				FE2A7ECE4B7239BD5465DFD74AA8E629 /* Pods-RaketaSwiftChallenge.release.xcconfig */,
+			);
+			name = "Pods-RaketaSwiftChallenge";
+			path = "Target Support Files/Pods-RaketaSwiftChallenge";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FFFD7AD65D3DE04CE569A02D7551E0A0 /* Products */,
+				E24D3328EE6BAC49E9DB3E0ED3F2A86B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E24D3328EE6BAC49E9DB3E0ED3F2A86B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88F5ED3D920CC57BD576DFEF69D84F68 /* Pods-RaketaSwiftChallenge */,
+				6017AEF2A0F4BCF665B38E7C9C98EBAA /* Pods-RaketaSwiftChallengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FFFD7AD65D3DE04CE569A02D7551E0A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E67CBEB84F635CA77DB46F5EF0B5B522 /* Pods_RaketaSwiftChallenge.framework */,
+				C9734FC7AE22529D39BDF3C96CC1D983 /* Pods_RaketaSwiftChallengeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9E2C896781B2552E359B2ADFD94E91F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53BA11F984A791970E5917EF81A97A2 /* Pods-RaketaSwiftChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B4E9B2753EB2E82794893CCB983440 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D80AF4707D30A35A138D0177953691E /* Pods-RaketaSwiftChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0549A9EEB3E2306903F28BD69F9923D8 /* Pods-RaketaSwiftChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670E5F24AA5A63B10C5CE03BE5BAC597 /* Build configuration list for PBXNativeTarget "Pods-RaketaSwiftChallenge" */;
+			buildPhases = (
+				9E2C896781B2552E359B2ADFD94E91F2 /* Headers */,
+				BBC9C10D3ACDCEE9A1789B9F7C3E67B7 /* Sources */,
+				91F0E5135F655E76CB5B80C086DCEEB6 /* Frameworks */,
+				FB1C2D252BABC063427C23E123DC264C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RaketaSwiftChallenge";
+			productName = "Pods-RaketaSwiftChallenge";
+			productReference = E67CBEB84F635CA77DB46F5EF0B5B522 /* Pods_RaketaSwiftChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		937E2CB55F2805DE51FBDE9C6DC74400 /* Pods-RaketaSwiftChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC653123F01139115DD053A7898BBFA1 /* Build configuration list for PBXNativeTarget "Pods-RaketaSwiftChallengeTests" */;
+			buildPhases = (
+				F2B4E9B2753EB2E82794893CCB983440 /* Headers */,
+				41BC8E8B0C54969E624B1A537FB41BA1 /* Sources */,
+				A89F34CDF7F8D43AD0C155D781E7625F /* Frameworks */,
+				1961729FFE5209953415FE2CB347B728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41236BAD1D059904AAC9DE5973E8F17E /* PBXTargetDependency */,
+			);
+			name = "Pods-RaketaSwiftChallengeTests";
+			productName = "Pods-RaketaSwiftChallengeTests";
+			productReference = C9734FC7AE22529D39BDF3C96CC1D983 /* Pods_RaketaSwiftChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FFFD7AD65D3DE04CE569A02D7551E0A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0549A9EEB3E2306903F28BD69F9923D8 /* Pods-RaketaSwiftChallenge */,
+				937E2CB55F2805DE51FBDE9C6DC74400 /* Pods-RaketaSwiftChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1961729FFE5209953415FE2CB347B728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1C2D252BABC063427C23E123DC264C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41BC8E8B0C54969E624B1A537FB41BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2981C79DAAD855DCFDB2AEEE3D5DAA94 /* Pods-RaketaSwiftChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC9C10D3ACDCEE9A1789B9F7C3E67B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F387E60DAD93D6CE0572CAC6C75A3C26 /* Pods-RaketaSwiftChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41236BAD1D059904AAC9DE5973E8F17E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RaketaSwiftChallenge";
+			target = 0549A9EEB3E2306903F28BD69F9923D8 /* Pods-RaketaSwiftChallenge */;
+			targetProxy = 1B94697A3D2444413A30B21091791CB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1CCECEEB6D07C8C1688250FC41829ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2A7ECE4B7239BD5465DFD74AA8E629 /* Pods-RaketaSwiftChallenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaketaSwiftChallenge/Pods-RaketaSwiftChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaketaSwiftChallenge/Pods-RaketaSwiftChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B45D3682F0C9D68D4D2267877FA0E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC10EFBA2321F1FC5B598CEDD4995476 /* Pods-RaketaSwiftChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaketaSwiftChallengeTests/Pods-RaketaSwiftChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaketaSwiftChallengeTests/Pods-RaketaSwiftChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92A3E9AC052A7345115439021B218E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		ABC9D85FF1E2D6A71370C3C02EF5309F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B656AEFF6801EC3CB2A8A4EC870FBCF /* Pods-RaketaSwiftChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaketaSwiftChallengeTests/Pods-RaketaSwiftChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaketaSwiftChallengeTests/Pods-RaketaSwiftChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C49C5F8D33C5AFCF39D16B01FFBA39EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65C7E5D58A8E0A81C97E5368C4672D4 /* Pods-RaketaSwiftChallenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaketaSwiftChallenge/Pods-RaketaSwiftChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaketaSwiftChallenge/Pods-RaketaSwiftChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
+				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670E5F24AA5A63B10C5CE03BE5BAC597 /* Build configuration list for PBXNativeTarget "Pods-RaketaSwiftChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49C5F8D33C5AFCF39D16B01FFBA39EB /* Debug */,
+				1CCECEEB6D07C8C1688250FC41829ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC653123F01139115DD053A7898BBFA1 /* Build configuration list for PBXNativeTarget "Pods-RaketaSwiftChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC9D85FF1E2D6A71370C3C02EF5309F /* Debug */,
+				8B45D3682F0C9D68D4D2267877FA0E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
